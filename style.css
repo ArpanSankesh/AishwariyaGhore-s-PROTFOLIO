@@ -146,6 +146,7 @@ body{
     }
     .menu-btn{
         display: block;
+        padding-right:3vw ;
     }
 
 }
