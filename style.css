@@ -4,8 +4,8 @@
 }
 
 :root{
-    --background-color:#0c0c0c;
-    --light-color:#fff;
+    --light-color:#0c0c0c;
+    --background-color:#fff;
     --accent-btn:#31A961;
 }
 
@@ -25,6 +25,11 @@ body{
     width: 100%;
     height: 100vh;
     background-color: var(--background-color);
+}
+
+section{
+    width: 100%;
+    height: 100vh;
 }
 
 .nav-bar{
@@ -77,16 +82,13 @@ body{
 }
 
 .nav-main h3{
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 .nav-main a:hover{
     border-bottom: 2px solid var(--light-color);
     font-size: 1.1vw;
 }
-
-
-
 
 .contact-btn{
     width: 8vw;
@@ -96,7 +98,7 @@ body{
     outline: none;
     cursor: pointer;
     font-size: 1vw;
-    font-weight: 400;
+    font-weight: 600;
     background-color: var(--accent-btn);
     transition: cubic-bezier(0.19, 1, 0.22, 1).5s;
     color: var(--light-color);
@@ -149,4 +151,44 @@ body{
         padding-right:3vw ;
     }
 
+}
+
+/* .hero-slider{
+    width: 200%;
+    height: 200%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+} */
+.hero{
+    width: 100%;
+    height: calc(100vh - 10vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.hero-txt-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 12vw;
+}
+
+.hero-txt-container h1{
+    font-size: 12vw;
+    font-weight: 400;
+}
+.hero-txt-container h1:nth-child(1){
+    margin-left:-15vw;
+}
+.hero-txt-container h1:nth-child(2){
+    margin-left:20vw;
+}
+.hero-txt-container h1:nth-child(3){
+    margin-left:-30vw;
 }
