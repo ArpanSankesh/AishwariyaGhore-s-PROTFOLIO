@@ -1,11 +1,12 @@
-var tl = gsap.timeline('.section-2',{
-    scrollTrigger:{
-        trigger:'.section-2',
-        start:'50% 50%',
-        end:'50% 50%',
-        markers:true
-    }
-})
+// var tl = gsap.timeline({
+//     scrollTrigger:{
+//         trigger:'.section-2',
+//         scroller:'body',
+//         start:'50% 50%',
+//         end:'50% 50%',
+//         markers:true
+//     }
+// })
 gsap.from('.nav-bar',{
     y:"-300px"
 })
@@ -26,4 +27,18 @@ gsap.to('.hero h1:nth-child(3)',{
     translateX:0
 })
 
+var tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:'.section-2',
+        start:'-20% 50%',
+        end:'50% 50%',
+        markers:true,
+        scrub:true
+    }
+})
+
+tl.to('.section-2',{
+    borderTopLeftRadius:0,
+    borderTopRightRadius:0
+})
 
