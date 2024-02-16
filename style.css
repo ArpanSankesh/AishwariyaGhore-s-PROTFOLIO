@@ -1,10 +1,107 @@
+@font-face {
+    font-family:'custom-font';
+    src: url('fonts/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.ttf');
+}
+
+:root{
+    --background-color:#0c0c0c;
+    --light-color:#fff;
+    --accent-btn:#31A961;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    font-family:'custom-font';
 }
 
 body{
     width: 100%;
     height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.nav-bar{
+    width: 100%;
+    height: 10vh;
+    /* background-color: rebeccapurple; */
+    color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw 0 10vw;
+}
+
+.portfolio-txt{
+    width: 20%;
+}
+.portfolio-txt h1{
+    font-size: 1.8vw;
+    cursor: pointer;
+}
+
+.logo-animation{
+    /* background-color: red; */
+    height: 2.2vw;
+    overflow: hidden;
+}
+
+.logo-animation h1{
+    transition: cubic-bezier(0.19, 1, 0.22, 1).5s;
+
+}
+ 
+.logo-animation:hover h1:nth-child(1){
+    margin-top: -2.2vw;
+}
+
+.nav-main{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+}
+
+.nav-main a{
+    text-decoration: none;
+    color: var(--light-color);
+    padding-bottom: 0.5vw;
+    transition: cubic-bezier(0.19, 1, 0.22, 1).5s;
+}
+
+.nav-main h3{
+    font-size: 1vw;
+}
+
+.nav-main a:hover{
+    border-bottom: 2px solid var(--light-color);
+    font-size: 1.1vw;
+}
+
+
+
+
+.contact-btn{
+    width: 8vw;
+    height: 3vw;
+    border-radius: 5vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1vw;
+    font-weight: 400;
+    background-color: var(--accent-btn);
+    transition: cubic-bezier(0.19, 1, 0.22, 1).5s;
+    color: var(--light-color);
+}
+
+.contact-btn:hover{
+    scale: 1.03;
 }
