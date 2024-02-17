@@ -418,7 +418,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 50%;
+  opacity: 0;
 }
+
 
 .projects-img img {
   height: 70%;
@@ -433,6 +437,9 @@ section {
   align-items: start;
   justify-content: center;
   padding: 3vw;
+  position: relative;
+  top: 50%;
+  opacity: 0;
 }
 
 .projects-info h1 {
