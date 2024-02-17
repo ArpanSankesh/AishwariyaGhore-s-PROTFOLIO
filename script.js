@@ -139,7 +139,6 @@ var tl5 = gsap.timeline({
     start: "0% 50%",
     end: "50% 50%",
     scrub: 2,
-    markers: true,
   },
 });
 
@@ -166,7 +165,6 @@ var tl6 = gsap.timeline({
     start: "0% 50%",
     end: "50% 50%",
     scrub: 2,
-    markers: true,
   },
 });
 
@@ -192,7 +190,6 @@ var tl7 = gsap.timeline({
     start: "0% 50%",
     end: "50% 50%",
     scrub: 2,
-    markers: true,
   },
 });
 
