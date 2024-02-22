@@ -19,6 +19,7 @@
 body {
   width: 100%;
   height: 100%;
+  scroll-behavior:smooth;
 }
 
 body::-webkit-scrollbar {
@@ -29,6 +30,39 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100vh;
   background-color: var(--background-color);
+  
+}
+
+.contactme{
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #0c0c0c;
+  right: -50%;
+  z-index: 999;
+  border-radius: 50%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1).9s;
+}
+
+.contactme-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vw;
+}
+
+.contactme-wrapper a {
+  color: var(--background-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contactme-wrapper h3 {
+  font-size: 5vw;
+  cursor: pointer;
 }
 
 .ham-menu {
@@ -95,7 +129,6 @@ section {
 }
 
 .logo-animation {
-  /* background-color: red; */
   height: 2.2vw;
   overflow: hidden;
 }
@@ -150,7 +183,7 @@ section {
   scale: 1.03;
 }
 
-.menu-btn {
+.menu-btn{
   display: flex;
   cursor: pointer;
   font-size: 5vw;
@@ -230,8 +263,6 @@ section {
     display: block;
     padding-right: 3vw;
   }
-  .hero {
-  }
 }
 
 /* --------------section-2 ---------------------- */
@@ -248,7 +279,6 @@ section {
   height: 100%;
   display: flex;
   align-items: center;
-  /* justify-content:center; */
 }
 
 .text-area h1 {
@@ -470,4 +500,9 @@ section {
 }
 .projects-container .projects:nth-child(2) {
   flex-direction: row-reverse;
+}
+
+.section-7{
+  width: 100%;
+  height: 100vh;
 }

@@ -2,6 +2,10 @@ var menuBtn = document.querySelector(".menu-btn i");
 var hamMenu = document.querySelector(".ham-menu");
 var hamItems = document.querySelector(".menu-wraper");
 var logo = document.querySelector(".portfolio-txt h1");
+var contactMenu = document.querySelector(".contactme");
+var contactBtn = document.querySelector(".contact-btn");
+
+
 let flag = 0;
 var dropDownMenu = function () {
   if (flag === 0) {
@@ -25,9 +29,23 @@ var dropDownMenu = function () {
 
 menuBtn.addEventListener("click", dropDownMenu);
 
+let flag2 = 0;
+var contactBar = function () {
+  if (flag2 === 0) {
+    contactMenu.style.right = "0";
+    contactMenu.style.borderRadius = "0";
+    flag2 = 1;
+  } else {
+    contactMenu.style.right = "-50%";
+    contactMenu.style.borderRadius = "50%";
+    flag2 = 0;
+  }
+};
+
+contactBtn.addEventListener("click", contactBar);
+
 gsap.from(".nav-bar", {
   y: "-300px",
-  // stagger: 0.1
 });
 
 gsap.to(".hero h1:nth-child(1)", {
